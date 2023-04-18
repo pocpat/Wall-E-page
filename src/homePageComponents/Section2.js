@@ -1,8 +1,15 @@
 import React from 'react'
+import './Section2.css'
+import { CardSection2 } from './CardSection2'
 
 const Section2 = () => {
   return (
-    <div>Section2</div>
+    <div className='bodyContainerS2'>
+  
+    <CardSection2/>
+    <CardSection2/>
+    <CardSection2/>
+    </div>
   )
 }
 
