@@ -1,0 +1,46 @@
+.bodySection1 {
+  background-color: #7f7f7f;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-weight: 300;
+  color: #efefef;
+}
+.titleS1 {
+  width: 85%;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 3%px;
+  padding: 0px;
+  justify-content: center;
+  margin: 0 8%;
+}
+.inputS1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "input"
+    "button";
+  margin: 3% 8%;
+}
+
+@media (min-width: 500px) {
+  .inputS1 {
+    grid-template-columns: 3fr 1fr;
+ 
+    grid-template-areas: "input button";
+    margin-bottom: 15px;
+    align-self: center;
+    width: 50%;
+  }
+  .userInputS1 {
+    flex-grow: 2;
+  }
+  .btnS1 {
+    flex-grow: 1;
+  }
+}
