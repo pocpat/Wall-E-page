@@ -43,4 +43,8 @@
   .btnS1 {
     flex-grow: 1;
   }
+  .titleS1 {
+    width: 67%;
+    font-size: 1.1em;
+  }
 }

@@ -16,6 +16,6 @@
     height: 100%;
     max-width: 1366px;
     min-width: 320px;
-   display: flex;
+   /* display: flex; */
    flex-direction: column;
 }

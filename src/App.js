@@ -1,13 +1,13 @@
 
 import './App.css';
-import Header from './homePageComponents/Header';
 import Section1 from './homePageComponents/Section1';
 import Section2 from './homePageComponents/Section2';
+import DrawerAppBar from './homePageComponents/DrawerAppBar';
 
 function App() {
   return (
 <div className='bodyHomePage'>  
-<Header/> 
+ <DrawerAppBar/> 
 <Section1/> 
 <Section2/> 
 
