@@ -16,7 +16,7 @@ const Section1 = () => {
     <div className='inputS1'>
     <input className='userInputS1' type='text' placeholder='adipiscing elit' />
   { /* <button className='btnS1'>Ullamco </button> */}
-    <Button  sx={{ color: '#fff', bgcolor: 'grey.900' }}>Ullamco </Button>
+    <Button  sx={{ color: '#fff', bgcolor: 'grey.900', minWidth:"100px" }}>Ullamco </Button>
    
 
     </div>
