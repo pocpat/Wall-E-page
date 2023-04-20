@@ -14,7 +14,8 @@
     flex-direction: column;
     width: 85%;
     height: auto;
-    background-color: #61c1fc;
+    /* background-color: #61c1fc; */
+    background-color:rgba(211, 211, 211, 0.5);
     margin: 3% 4%;
 
   
@@ -28,6 +29,7 @@
    
     height: 25%;
     background-color: #838383;
+    /* background-color:rgba(211, 211, 211, 0.5); */
     color: rgb(34, 34, 34);
     display: flex;
     flex-direction: column;

@@ -4,10 +4,10 @@
     border-width: 1px;
 } */
 .bodyHomePage{
-    /* background-color: #f5f5f5; */
+    background-color: #f5f5f5;
    
     box-sizing: border-box;
-    background-color: #27769e;
+    /* background-color: #00ffff; */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #e2e2e2;
@@ -16,6 +16,5 @@
     height: 100%;
     max-width: 1366px;
     min-width: 320px;
-   /* display: flex; */
    flex-direction: column;
 }

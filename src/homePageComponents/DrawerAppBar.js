@@ -17,7 +17,8 @@ import Button from "@mui/material/Button";
 // import Container from '@mui/material/Container';
 import "../App.css";
 import TrackChangesIcon from "@mui/icons-material/TrackChanges";
-import AdbIcon from "@mui/icons-material/Adb";
+
+
 
 // const drawerWidth = 320;
 const style = getComputedStyle(document.body);
@@ -58,7 +59,13 @@ function DrawerAppBar(props) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="static" sx={{ maxWidth: "1366px" }}>
-        <Toolbar sx={{ justifyContent: "flex-end" }}>
+        <Toolbar sx={{ 
+          justifyContent: "flex-end", 
+          bgcolor:'rgba(211, 211, 211, 1)',
+        color: "rgb(34, 34, 34)",
+         fontWeight:"bold",
+
+        }}>
         
           <Typography
             variant="h6"
@@ -84,15 +91,17 @@ function DrawerAppBar(props) {
           <MenuIcon />
         </IconButton>
           {/* menu disappears on small screens */}
-          <Box sx={{ display: { xs: "none", sm: "block" }, marginLeft: "auto" }}>
+          <Box sx={{ display: { xs: "none", sm: "block", }, marginLeft: "auto" }}>
             {navItems.map((item) => (
               <Button
                 key={item}
                
                 sx={{
-                  color: "#fff",
+                  color: "rgb(34, 34, 34)",
+                 
                   "&:last-of-type": {
-                    border: "1px solid white",
+                    border: "1px solid rgb(34, 34, 34)",
+                   
                   },
                 }}
               >
