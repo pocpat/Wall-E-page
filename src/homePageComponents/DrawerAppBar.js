@@ -36,7 +36,9 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+              
+              
+              <Typography variant="h6" sx={{ my: 2 }}>
         My <br></br>Company
       </Typography>
       <Divider />
@@ -74,8 +76,7 @@ function DrawerAppBar(props) {
               flexGrow: 1, 
               display: { 
               lg: 'block'},
-              alignItems: "flex-end" 
-            }}
+              alignItems: "flex-end" ,            }}
           >
             <TrackChangesIcon sx={{ marginRight: "8px" }} />
             My Company
@@ -86,19 +87,19 @@ function DrawerAppBar(props) {
           edge="end"
           onClick={handleDrawerToggle}
           sx={{ mr: 2, display: { sm: "none" },
+        
          }}
         >
           <MenuIcon />
         </IconButton>
           {/* menu disappears on small screens */}
-          <Box sx={{ display: { xs: "none", sm: "block", }, marginLeft: "auto" }}>
+          <Box sx={{ display: { xs: "none", sm: "block"  }, marginLeft: "auto" }}>
             {navItems.map((item) => (
               <Button
                 key={item}
                
                 sx={{
                   color: "rgb(34, 34, 34)",
-                 
                   "&:last-of-type": {
                     border: "1px solid rgb(34, 34, 34)",
                    
