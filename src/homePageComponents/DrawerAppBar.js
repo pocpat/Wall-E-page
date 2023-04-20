@@ -1,29 +1,29 @@
-import * as React from 'react';
+import * as React from "react";
 // import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import MenuIcon from "@mui/icons-material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 // import Container from '@mui/material/Container';
-import'../App.css';
-
+import "../App.css";
+import TrackChangesIcon from "@mui/icons-material/TrackChanges";
+import AdbIcon from "@mui/icons-material/Adb";
 
 // const drawerWidth = 320;
 const style = getComputedStyle(document.body);
-const maxWidth = style.getPropertyValue('--max-width');
+const maxWidth = style.getPropertyValue("--max-width");
 
-
-const navItems = ['Home', 'About', 'Contact','LOGIN'];
+const navItems = ["Home", "About", "Contact", "LOGIN"];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -34,7 +34,7 @@ function DrawerAppBar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         My <br></br>Company
       </Typography>
@@ -42,7 +42,7 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-          <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -51,52 +51,58 @@ function DrawerAppBar(props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
-   
-    <Box sx={{ display: 'flex' }}>
-       <CssBaseline />
-     <AppBar component="nav"  
-      position="static"  sx={{ maxWidth: '1366px'}}
-  >
-
-        <Toolbar >
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
+    <Box sx={{ display: "flex" }}>
+      <CssBaseline />
+      <AppBar position="static" sx={{ maxWidth: "1366px" }}>
+        <Toolbar sx={{ justifyContent: "flex-end" }}>
+        
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ 
+              flexGrow: 1, 
+              display: { 
+              lg: 'block'},
+              alignItems: "flex-end" 
+            }}
           >
-           My Company 
+            <TrackChangesIcon sx={{ marginRight: "8px" }} />
+            My Company
           </Typography>
+          <IconButton
+          color="inherit"
+          aria-label="open drawer"
+          edge="end"
+          onClick={handleDrawerToggle}
+          sx={{ mr: 2, display: { sm: "none" },
+         }}
+        >
+          <MenuIcon />
+        </IconButton>
           {/* menu disappears on small screens */}
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: "none", sm: "block" }, marginLeft: "auto" }}>
             {navItems.map((item) => (
               <Button
-      key={item}
-      sx={{
-        color: '#fff',
-        '&:last-of-type': {
-          border: '1px solid white',
-        },
-      }}
-    >
+                key={item}
+               
+                sx={{
+                  color: "#fff",
+                  "&:last-of-type": {
+                    border: "1px solid white",
+                  },
+                }}
+              >
                 {item}
               </Button>
             ))}
           </Box>
         </Toolbar>
       </AppBar>
-   
+
       <Box component="nav">
         <Drawer
           container={container}
@@ -106,26 +112,24 @@ function DrawerAppBar(props) {
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}
+          anchor="right" // set the anchor to "right"
           sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box'
-            , 
-           width: {
-               lg: maxWidth,
-           },
-          },
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: {
+                lg: maxWidth,
+              },
+              left: "auto", // set the left style to "auto"
+              right: 0, // set the right style to 0
+            },
           }}
         >
-        
-      {drawer}
+          {drawer}
         </Drawer>
       </Box>
-      <Box component="main" sx={{ p: 3 }}>
-       
-       
-      </Box>
+      <Box component="main" sx={{ p: 3 }}></Box>
     </Box>
-
   );
 }
 export default DrawerAppBar;
