@@ -18,8 +18,6 @@ import Button from "@mui/material/Button";
 import "../App.css";
 import TrackChangesIcon from "@mui/icons-material/TrackChanges";
 
-
-
 // const drawerWidth = 320;
 const style = getComputedStyle(document.body);
 const maxWidth = style.getPropertyValue("--max-width");
@@ -36,9 +34,7 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-              
-              
-              <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2 }}>
         My <br></br>Company
       </Typography>
       <Divider />
@@ -60,49 +56,48 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="static" sx={{ maxWidth: "1366px" }}>
-        <Toolbar sx={{ 
-          justifyContent: "flex-end", 
-          bgcolor:'rgba(211, 211, 211, 1)',
-        color: "rgb(34, 34, 34)",
-         fontWeight:"bold",
-
-        }}>
-        
+      <AppBar className="toolbarAppBar" position="static" sx={{ maxWidth: "1366px" }}>
+        <Toolbar 
+          sx={{
+            justifyContent: "flex-end",
+            color: "white",
+            fontWeight: "bold",
+          }}
+        >
           <Typography
             variant="h6"
             component="div"
-            sx={{ 
-              flexGrow: 1, 
-              display: { 
-              lg: 'block'},
-              alignItems: "flex-end" ,            }}
+            sx={{
+              flexGrow: 1,
+              display: {
+                lg: "flex",
+              },
+              alignItems: "center",
+            }}
           >
-            <TrackChangesIcon sx={{ marginRight: "8px" }} />
+            <TrackChangesIcon sx={{ marginRight: "8px", alignItems: "center" }} />
             My Company
           </Typography>
           <IconButton
-          color="inherit"
-          aria-label="open drawer"
-          edge="end"
-          onClick={handleDrawerToggle}
-          sx={{ mr: 2, display: { sm: "none" },
-        
-         }}
-        >
-          <MenuIcon />
-        </IconButton>
+            color="inherit"
+            aria-label="open drawer"
+            edge="end"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
           {/* menu disappears on small screens */}
-          <Box sx={{ display: { xs: "none", sm: "block"  }, marginLeft: "auto" }}>
+          <Box
+            sx={{ display: { xs: "none", sm: "flex" }, marginLeft: "auto" }}
+          >
             {navItems.map((item) => (
               <Button
                 key={item}
-               
                 sx={{
-                  color: "rgb(34, 34, 34)",
+                  color: "white",
                   "&:last-of-type": {
-                    border: "1px solid rgb(34, 34, 34)",
-                   
+                    border: "1px solid white",
                   },
                 }}
               >
@@ -124,7 +119,7 @@ function DrawerAppBar(props) {
           }}
           anchor="right" // set the anchor to "right"
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "flex", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: {

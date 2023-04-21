@@ -18,6 +18,14 @@
     min-width: 320px;
    flex-direction: column;
 }
+.toolbarAppBar{
+   background-color: rgba(8, 62, 43, 0.5) !important; 
+   background-image: url("./imgs/bg_appbar.jpg") !important;
+   background-size: cover;
+   background-position: center;
+   /* background-position: 0 210px; */
+  
+}
 
 /* darck-green rgb (8, 62, 43);
 very-darck-green rgb (0, 17, 9);

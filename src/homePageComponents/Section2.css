@@ -1,5 +1,5 @@
 .bodyContainerS2{
-    background-color:rgb (0, 17, 9);
+    background-color:rgb(8, 62, 43);
     /* padding: 0px;
     margin: 0px; */
     width: 100%;
@@ -12,11 +12,11 @@
 .cardContainerS2{
     display: flex;
     flex-direction: column;
-    width: 85%;
-    height: auto;
+    width: 255px;
+    
     /* background-color: #61c1fc; */
     background-color:rgba(211, 211, 211, 0.5);
-    margin: 3% 4%;
+    margin: 50px 20px;
 
   
 }
@@ -50,19 +50,34 @@
 
  {
     .bodyContainerS2{
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: row; */
         background-color:rgb(8, 62, 43);
+    
     }
-    .cardContainerS2{
+    /* .cardContainerS2{
         width: 100%;
         height: 100%;
-    }
+    } */
     .imgCardS2{
-        width: 100%;
+        width: auto;
        
     }
     .textContainerS2{ 
         justify-content: flex-start;
     }
 }
+
+@media (min-width: 600px) {
+    /* 2 columns on middle screens */
+    .bodyContainerS2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 800px) {
+    /* 3 columns on wide screens */
+    .bodyContainerS2 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
