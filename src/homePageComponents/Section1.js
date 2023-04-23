@@ -35,7 +35,7 @@ const Section1 = () => {
       minWidth: "100px",
       backgroundColor: "rgb(58, 112, 56)",
       color: "rgb(255, 255, 255)",
-      borderRadius: "0 6px 6px 0",
+      borderRadius: "0 0 6px 6px ",
     }}
     
     >Ullamco </Button>
