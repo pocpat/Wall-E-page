@@ -1,0 +1,22 @@
+@use 'colors' as *;
+
+.bodyHomePage{
+    background-color:$lightColor;
+   
+    box-sizing: border-box;
+    /* background-color: #00ffff; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:$lightColor;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: 1366px;
+    min-width: 320px;
+   flex-direction: column;
+}
+// *{
+//     border-color: blueviolet;
+//     border-style: solid;
+//     border-width: 1px;
+// } 

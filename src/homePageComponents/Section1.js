@@ -1,5 +1,6 @@
 import React from 'react'
-import './Section1.css'
+import '../styles/section1.css'
+
 import Button from '@mui/material/Button';
 
 const Section1 = () => {

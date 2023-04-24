@@ -1,5 +1,6 @@
 
-import './App.css';
+// import './App.css';
+import './styles/style.css';
 import Section1 from './homePageComponents/Section1';
 import Section2 from './homePageComponents/Section2';
 import DrawerAppBar from './homePageComponents/DrawerAppBar';

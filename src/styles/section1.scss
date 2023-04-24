@@ -1,0 +1,68 @@
+@use "colors" as *;
+.bodySection1 {
+    background-color: $darckerColor;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight: 300;
+    color: $veryBrightyColor;
+  }
+  .titleS1 {
+    width: 85%;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 3%px;
+    padding: 0px;
+    justify-content: center;
+    margin: 0 8%;
+  }
+  .inputS1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "input"
+      "button";
+    margin: 3% 8%;
+  }
+  .btnS1{
+    grid-area: button;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: $darckerColor;
+    color: $darckerColor;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      background-color: lighten($lightColor,3);
+    }
+  }
+  @media (min-width: 500px) {
+    .inputS1 {
+      grid-template-columns: 3fr 1fr;
+   
+      grid-template-areas: "input button";
+      margin-bottom: 15px;
+      align-self: center;
+      width: 50%;
+    }
+    .userInputS1 {
+      flex-grow: 2;
+    }
+    .btnS1 {
+      flex-grow: 1;
+    }
+    .titleS1 {
+      width: 67%;
+      font-size: 1.1em;
+    }
+  }
+  

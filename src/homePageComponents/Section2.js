@@ -1,5 +1,5 @@
 import React from 'react'
-import './Section2.css'
+import '../styles/section2.css'
 import { CardSection2 } from './CardSection2'
 
 const Section2 = () => {
