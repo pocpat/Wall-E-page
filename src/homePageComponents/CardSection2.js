@@ -1,5 +1,6 @@
 import React from 'react'
-import './Section2.css'
+// import './Section2.css'
+import '../styles/section2.css'
 
 export const CardSection2 = (props) => {
   return (

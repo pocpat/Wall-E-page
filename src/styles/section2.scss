@@ -1,8 +1,6 @@
-@use 'colors' as *;
+@use 'colors' as c;
 .bodyContainerS2{
-    background-color: $veryBrightyColor;
-    /* padding: 0px;
-    margin: 0px; */
+    background-color: c.$veryBrightyColor;
     width: 100%;
     height: 100%;
     display: grid;
@@ -15,8 +13,7 @@
     flex-direction: column;
     width: 85%;
     height: auto;
-    /* background-color: #61c1fc; */
-    background-color: $darckerColor;
+    background-color: c.$cardColor;
     margin: 3% 4%;
 
   
@@ -24,14 +21,13 @@
 .imgCardS2{
     width: 100%;
     height: 180px;
-    background-color: $veryBrightyColor;
+    background-color: c.$cardColor;
 }
 .textContainerS2{
    
     height: 25%;
-    background-color: $lightColor;
-    /* background-color:rgba(211, 211, 211, 0.5); */
-    color: $veryDarckColor;
+    background-color: c.$lightColor;
+    color: c.$veryDarckColor;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

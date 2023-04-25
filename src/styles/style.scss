@@ -1,13 +1,11 @@
-@use 'colors' as *;
+@use 'colors' as c;
 
 .bodyHomePage{
-    background-color:$lightColor;
-   
+    background-color: c.$lightColor;
     box-sizing: border-box;
-    /* background-color: #00ffff; */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color:$lightColor;
+    color: c.$lightColor;
     margin: 0;
     padding: 0;
     height: 100%;

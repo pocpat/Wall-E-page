@@ -1,5 +1,5 @@
 .bodySection1 {
-  background-color: rgb(62, 80, 183);
+  background-color: #516672;
   padding: 0px;
   margin: 0px;
   width: 100%;
@@ -8,7 +8,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   font-weight: 300;
-  color: rgb(229, 245, 54);
+  color: #adc5d4;
 }
 
 .titleS1 {
@@ -35,15 +35,15 @@
   width: 100%;
   height: 100%;
   border: none;
-  background-color: rgb(62, 80, 183);
-  color: rgb(62, 80, 183);
+  background-color: #516672 !important;
+  color: #516672 !important;
   font-weight: 500;
   font-size: 1em;
   border-radius: 5px;
   cursor: pointer;
 }
 .btnS1:hover {
-  background-color: #d87519;
+  background-color: #708b9b;
 }
 
 @media (min-width: 500px) {
@@ -56,6 +56,8 @@
   }
   .userInputS1 {
     flex-grow: 2;
+    background-color: #adc5d4;
+    color: #374b57;
   }
   .btnS1 {
     flex-grow: 1;
@@ -64,4 +66,14 @@
     width: 67%;
     font-size: 1.1em;
   }
-}/*# sourceMappingURL=section1.css.map */
+}
+.section1__btn {
+  background-color: #688494 !important;
+  color: #adc5d4 !important;
+  font-weight: 600;
+}
+.section1__btn:hover {
+  background-color: #76909f;
+}
+
+/*# sourceMappingURL=section1.css.map */

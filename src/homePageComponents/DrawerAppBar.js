@@ -17,6 +17,8 @@ import Button from "@mui/material/Button";
 // import Container from '@mui/material/Container';
 import "../App.css";
 import TrackChangesIcon from "@mui/icons-material/TrackChanges";
+import '../styles/navbar.css'
+
 
 
 
@@ -46,7 +48,7 @@ function DrawerAppBar(props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText  primary={item} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -61,10 +63,10 @@ function DrawerAppBar(props) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="static" sx={{ maxWidth: "1366px" }}>
-        <Toolbar sx={{ 
+        <Toolbar className="drawer__toolbar" sx={{ 
           justifyContent: "flex-end", 
-          bgcolor:'rgba(211, 211, 211, 1)',
-        color: "rgb(34, 34, 34)",
+          // bgcolor:'rgba(211, 211, 211, 1)',
+        // color: "rgb(34, 34, 34)",
          fontWeight:"bold",
 
         }}>
@@ -96,10 +98,11 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: "none", sm: "block"  }, marginLeft: "auto" }}>
             {navItems.map((item) => (
               <Button
+              className="drawer__items--text"
                 key={item}
                
                 sx={{
-                  color: "rgb(34, 34, 34)",
+                  // color: "rgb(34, 34, 34)",
                   "&:last-of-type": {
                     border: "1px solid rgb(34, 34, 34)",
                    

@@ -1,14 +1,15 @@
 .bodyHomePage {
-  background-color: rgb(202, 110, 23);
+  background-color: #688494;
   box-sizing: border-box;
-  /* background-color: #00ffff; */
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: rgb(202, 110, 23);
+  color: #688494;
   margin: 0;
   padding: 0;
   height: 100%;
   max-width: 1366px;
   min-width: 320px;
   flex-direction: column;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

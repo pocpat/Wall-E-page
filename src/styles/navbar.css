@@ -1,0 +1,15 @@
+.drawer__toolbar {
+  background-color: #adc5d4;
+  color: #374b57;
+}
+
+.drawer__items--text {
+  color: #374b57 !important;
+  font-weight: bold !important;
+}
+
+.drawer__items--text:hover {
+  color: #516672;
+}
+
+/*# sourceMappingURL=navbar.css.map */

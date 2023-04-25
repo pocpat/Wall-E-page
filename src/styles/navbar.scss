@@ -1,0 +1,13 @@
+@use 'colors' as c;
+.drawer__toolbar{
+    background-color:c.$veryBrightyColor;
+    color: c.$veryDarckColor;
+}
+.drawer__items--text{
+    color: c.$veryDarckColor !important;
+    font-weight: bold !important;
+   
+}
+.drawer__items--text:hover{
+    color: c.$darckerColor;
+}
