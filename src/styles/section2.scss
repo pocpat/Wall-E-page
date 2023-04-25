@@ -1,5 +1,8 @@
 @use "colors" as c;
 @import 'placeholders';
+@import 'media-queries';
+
+
 .bodyContainerS2{
     background-color:c.$darkGreen;
     @extend %width-height-margin-padding;
@@ -40,7 +43,7 @@
     font-size: smaller;
    
 }
-@media (min-width: 501px)
+@include mq-min-width-501 
  {
     .bodyContainerS2{
         background-color:c.$darkGreen;
@@ -56,14 +59,14 @@
     }
 }
 
-@media (min-width: 600px) {
+@include mq-min-width-600 {
     /* 2 columns on middle screens */
     .bodyContainerS2 {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
-  @media (min-width: 800px) {
+  @include mq-min-width-800 {
     /* 3 columns on wide screens */
     .bodyContainerS2 {
       grid-template-columns: repeat(3, 1fr);
