@@ -1,7 +1,17 @@
+.textContainerS2, .cardContainerS2 {
+  display: flex;
+  flex-direction: column;
+}
+
 .bodyContainerS2 {
-  background-color: rgb(8, 62, 43);
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bodyContainerS2 {
+  background-color: rgb(8, 62, 43);
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -9,10 +19,7 @@
 }
 
 .cardContainerS2 {
-  display: flex;
-  flex-direction: column;
   width: 255px;
-  /* background-color: #61c1fc; */
   background-color: rgb(8, 62, 43);
   margin: 50px 20px;
 }
@@ -27,8 +34,6 @@
   height: 25%;
   background-color: rgb(228, 250, 233);
   color: rgb(0, 17, 9);
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 5px;

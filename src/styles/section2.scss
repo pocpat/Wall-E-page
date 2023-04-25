@@ -1,20 +1,16 @@
 @use "colors" as c;
-
+@import 'placeholders';
 .bodyContainerS2{
     background-color:c.$darkGreen;
-    width: 100%;
-    height: 100%;
+    @extend %width-height-margin-padding;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center
 }
 .cardContainerS2{
-    display: flex;
-    flex-direction: column;
+    @extend %flex-column;
     width: 255px;
-    
-    /* background-color: #61c1fc; */
     background-color: c.$darkGreen;
     margin: 50px 20px;
 
@@ -30,8 +26,7 @@
     height: 25%;
     background-color: c.$almostWhite;
     color: c.$almostBlack;
-    display: flex;
-    flex-direction: column;
+    @extend %flex-column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 5px;
@@ -46,7 +41,6 @@
    
 }
 @media (min-width: 501px)
-
  {
     .bodyContainerS2{
         background-color:c.$darkGreen;
