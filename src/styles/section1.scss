@@ -1,19 +1,47 @@
 @use "colors" as c;
-@import 'placeholders';
-@import 'media-queries';
+@import "placeholders";
+@import "media-queries";
 
 .bodySection1 {
+  @extend %width-height-margin-padding;
+  @extend %flex-column;
+  flex-wrap: wrap;
+  font-weight: 300;
+  color: c.$almostWhite;
+}
+.bgImgS1 {
+  background-image: url("../imgs/bg_s1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.titleS1 {
+  width: 85%;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 3%;
+  padding: 0;
+  justify-content: center;
+  margin: 0 8%;
+  color: c.$almostBlack;
+}
+
+// nested user input and button
+.inputS1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "input"
+    "button";
+  margin: 3% 8%;
+  .userInputS1 {
+    background-color: c.$almostWhite;
+    outline-color: c.$lightGreen;
+    border-radius: 6px 6px 0 0;
     @extend %width-height-margin-padding;
-    @extend %flex-column;
-    flex-wrap: wrap;
+    padding: 10px;
+    color: c.$lightGreen;
+    font-size: 1rem;
     font-weight: 300;
-    color:c.$almostWhite;
-  }
-  
-  .bgImgS1 {
-    background-image: url("../imgs/bg_s1.jpg");
-    background-size: cover;
-    background-position: center;
   }
   .btnS1 {
     font-size: 1rem;
@@ -22,63 +50,33 @@
     outline: none;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background-color: c.$almostWhite !important;
+      color: c.$lightGreen;
+    }
   }
-  .btnS1:hover{
-    background-color:c.$almostWhite !important;
-    color: c.$lightGreen;
+}
+
+@include mq-min-width-501 {
+  .inputS1 {
+    grid-template-columns: 3fr 1fr;
+
+    grid-template-areas: "input button";
+    margin-bottom: 15px;
+    align-self: center;
+    width: 50%;
   }
   .userInputS1 {
-    background-color:c.$almostWhite;
-    outline-color: c.$lightGreen;
-    border-radius: 6px 6px 0 0;
-    @extend %width-height-margin-padding;
-    padding: 10px;
-    color: c.$lightGreen;
-    font-size: 1rem;
-    font-weight: 300;
-    
+    flex-grow: 2;
+    border-radius: 6px 0 0 6px;
+  }
+  .btnS1 {
+    flex-grow: 1;
+    border-radius: 0 6px 6px 0 !important;
   }
   .titleS1 {
-    width: 85%;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 3%;
-    padding: 0;
-    justify-content: center;
-    margin: 0 8%;
-    color: c.$almostBlack;
+    width: 67%;
+    font-size: 1.1rem;
   }
-  .inputS1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "input"
-      "button";
-    margin: 3% 8%;
-  }
-  
-  @include mq-min-width-501 {
-    .inputS1 {
-      grid-template-columns: 3fr 1fr;
-  
-      grid-template-areas: "input button";
-      margin-bottom: 15px;
-      align-self: center;
-      width: 50%;
-    }
-    .userInputS1 {
-      flex-grow: 2;
-      border-radius: 6px 0 0 6px;
-    }
-    .btnS1 {
-      flex-grow: 1;
-      border-radius: 0 6px 6px 0 !important;
-    }
-    .titleS1 {
-      width: 67%;
-      font-size: 1.1rem;
-    }
-  }
-  
-  
-  
+}

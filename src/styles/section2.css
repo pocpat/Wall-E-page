@@ -1,4 +1,4 @@
-.textContainerS2, .cardContainerS2 {
+.cardContainerS2 .textContainerS2, .cardContainerS2 {
   display: flex;
   flex-direction: column;
 }
@@ -23,14 +23,12 @@
   background-color: rgb(8, 62, 43);
   margin: 50px 20px;
 }
-
-.imgCardS2 {
+.cardContainerS2 .imgCardS2 {
   width: 100%;
   height: 180px;
   background-color: rgb(228, 250, 233);
 }
-
-.textContainerS2 {
+.cardContainerS2 .textContainerS2 {
   height: 25%;
   background-color: rgb(228, 250, 233);
   color: rgb(0, 17, 9);
@@ -39,12 +37,10 @@
   padding: 5px;
   margin: 0%;
 }
-
-.titleCardS2 {
+.cardContainerS2 .textContainerS2 .titleCardS2 {
   margin: 0%;
 }
-
-.textCardS2 {
+.cardContainerS2 .textContainerS2 .textCardS2 {
   margin: 0%;
   font-size: smaller;
 }

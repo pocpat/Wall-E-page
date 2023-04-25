@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.userInputS1, .btnS1, .bodySection1 {
+.inputS1 .btnS1, .inputS1 .userInputS1, .bodySection1 {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -22,29 +22,6 @@
   background-position: center;
 }
 
-.btnS1 {
-  font-size: 1rem;
-  font-weight: 300;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-.btnS1:hover {
-  background-color: rgb(228, 250, 233) !important;
-  color: rgb(58, 112, 56);
-}
-
-.userInputS1 {
-  background-color: rgb(228, 250, 233);
-  outline-color: rgb(58, 112, 56);
-  border-radius: 6px 6px 0 0;
-  padding: 10px;
-  color: rgb(58, 112, 56);
-  font-size: 1rem;
-  font-weight: 300;
-}
-
 .titleS1 {
   width: 85%;
   font-size: 1em;
@@ -61,6 +38,26 @@
   grid-template-columns: 1fr;
   grid-template-areas: "input" "button";
   margin: 3% 8%;
+}
+.inputS1 .userInputS1 {
+  background-color: rgb(228, 250, 233);
+  outline-color: rgb(58, 112, 56);
+  border-radius: 6px 6px 0 0;
+  padding: 10px;
+  color: rgb(58, 112, 56);
+  font-size: 1rem;
+  font-weight: 300;
+}
+.inputS1 .btnS1 {
+  font-size: 1rem;
+  font-weight: 300;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.inputS1 .btnS1:hover {
+  background-color: rgb(228, 250, 233) !important;
+  color: rgb(58, 112, 56);
 }
 
 @media (min-width: 501px) {

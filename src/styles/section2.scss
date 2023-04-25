@@ -1,31 +1,28 @@
 @use "colors" as c;
-@import 'placeholders';
-@import 'media-queries';
+@import "placeholders";
+@import "media-queries";
 
-
-.bodyContainerS2{
-    background-color:c.$darkGreen;
-    @extend %width-height-margin-padding;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center
+.bodyContainerS2 {
+  background-color: c.$darkGreen;
+  @extend %width-height-margin-padding;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
 }
-.cardContainerS2{
-    @extend %flex-column;
-    width: 255px;
-    background-color: c.$darkGreen;
-    margin: 50px 20px;
-
-  
-}
-.imgCardS2{
+//  nested cards container
+.cardContainerS2 {
+  @extend %flex-column;
+  width: 255px;
+  background-color: c.$darkGreen;
+  margin: 50px 20px;
+  .imgCardS2 {
     width: 100%;
     height: 180px;
     background-color: c.$almostWhite;
-}
-.textContainerS2{
-   
+  }
+  // nested text under the image
+  .textContainerS2 {
     height: 25%;
     background-color: c.$almostWhite;
     color: c.$almostBlack;
@@ -34,41 +31,39 @@
     justify-content: flex-start;
     padding: 5px;
     margin: 0%;
-}
-.titleCardS2{
-    margin: 0%;
-}
-.textCardS2{
-    margin: 0% ;
-    font-size: smaller;
-   
-}
-@include mq-min-width-501 
- {
-    .bodyContainerS2{
-        background-color:c.$darkGreen;
-    
+
+    .titleCardS2 {
+      margin: 0%;
     }
-  
-    .imgCardS2{
-        width: auto;
-       
+    .textCardS2 {
+      margin: 0%;
+      font-size: smaller;
     }
-    .textContainerS2{ 
-        justify-content: flex-start;
-    }
+  }
+}
+@include mq-min-width-501 {
+  .bodyContainerS2 {
+    background-color: c.$darkGreen;
+  }
+
+  .imgCardS2 {
+    width: auto;
+  }
+  .textContainerS2 {
+    justify-content: flex-start;
+  }
 }
 
 @include mq-min-width-600 {
-    /* 2 columns on middle screens */
-    .bodyContainerS2 {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  /* 2 columns on middle screens */
+  .bodyContainerS2 {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @include mq-min-width-800 {
-    /* 3 columns on wide screens */
-    .bodyContainerS2 {
-      grid-template-columns: repeat(3, 1fr);
-    }
+}
+
+@include mq-min-width-800 {
+  /* 3 columns on wide screens */
+  .bodyContainerS2 {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
