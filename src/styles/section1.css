@@ -68,7 +68,7 @@
     align-self: center;
     width: 50%;
   }
-  .userInputS1 {
+  .inputS1 .userInputS1 {
     flex-grow: 2;
     border-radius: 6px 0 0 6px;
   }
