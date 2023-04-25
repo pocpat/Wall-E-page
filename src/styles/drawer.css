@@ -1,0 +1,14 @@
+.drawer__toolbar {
+  color: rgb(228, 250, 233);
+}
+
+.drawer__items--text {
+  color: rgb(228, 250, 233) !important;
+  font-weight: 500 !important;
+}
+
+.drawer__items--text:hover {
+  color: rgb(8, 62, 43);
+}
+
+/*# sourceMappingURL=drawer.css.map */

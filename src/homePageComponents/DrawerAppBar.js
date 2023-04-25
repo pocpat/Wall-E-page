@@ -15,7 +15,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 // import Container from '@mui/material/Container';
-import "../App.css";
+// import "../App.css";
+import '../styles/drawer.css'
 import TrackChangesIcon from "@mui/icons-material/TrackChanges";
 
 // const drawerWidth = 320;
@@ -58,9 +59,10 @@ function DrawerAppBar(props) {
       <CssBaseline />
       <AppBar className="toolbarAppBar" position="static" sx={{ maxWidth: "1366px" }}>
         <Toolbar 
+        className="drawer__toolbar"
           sx={{
             justifyContent: "flex-end",
-            color: "white",
+            // color: "white",
             fontWeight: "bold",
           }}
         >
@@ -93,9 +95,10 @@ function DrawerAppBar(props) {
           >
             {navItems.map((item) => (
               <Button
+              className="drawer__items--text"
                 key={item}
                 sx={{
-                  color: "white",
+                 // color: "white",
                   "&:last-of-type": {
                     border: "1px solid white",
                   },

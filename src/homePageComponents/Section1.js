@@ -1,7 +1,8 @@
 import React from 'react'
-import './Section1.css'
+// import './Section1.css'
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import '../styles/section1.css'
 
 const Section1 = () => {
   return (

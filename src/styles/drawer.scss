@@ -1,0 +1,15 @@
+@use 'colors' as c;
+
+.drawer__toolbar{
+    // background-color:c.$almostWhite;
+    color: c.$almostWhite;
+}
+.drawer__items--text{
+    color: c.$almostWhite !important;
+    font-weight: 500 !important;
+   
+}
+
+.drawer__items--text:hover{
+    color: c.$darkGreen;
+}

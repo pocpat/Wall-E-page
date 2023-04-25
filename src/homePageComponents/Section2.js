@@ -1,9 +1,10 @@
 import React from 'react'
-import './Section2.css'
+// import './Section2.css'
 import { CardSection2 } from './CardSection2'
 import robot1 from '../imgs/robot1.png'
 import robot2 from '../imgs/robot2.png'
 import robot3 from '../imgs/robot3.png'
+import '../styles/section2.css'
 const Section2 = () => {
   return (
     <div className='bodyContainerS2'>

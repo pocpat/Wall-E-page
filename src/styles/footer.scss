@@ -1,6 +1,8 @@
+@use "colors" as c;
+
 .footer{
-    background-color: rgb(0, 17, 9);
-    color: #ffffff;
+    background-color: c.$almostBlack;
+    color: c.$almostWhite;
     padding: 20px;
     text-align: center;
     font-size: 12px;
@@ -14,6 +16,6 @@
     align-items: center;
 }
 .footer p{
-    color: #ffffff;
+    color: c.$almostWhite;
     font-size: 15px;
 }

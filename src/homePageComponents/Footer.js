@@ -1,7 +1,7 @@
 import React from 'react'
-import './Footer.css'
+// import './Footer.css'
 import TrackChangesIcon from "@mui/icons-material/TrackChanges";
-
+import '../styles/footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
