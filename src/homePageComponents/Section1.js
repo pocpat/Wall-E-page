@@ -27,8 +27,6 @@ const Section1 = () => {
       color: "rgb (48, 111, 85)",
       outline: "rgb(58, 112, 56)",
     }}
-    
-    
     />
   { /* <button className='btnS1'>Ullamco </button> */}
     <Button className='btnS1' 
@@ -38,13 +36,9 @@ const Section1 = () => {
       color: "rgb(255, 255, 255)",
       borderRadius: "0 0 6px 6px ",
     }}
-    
     >Ullamco </Button>
    
-
     </div>
-
-
     </div>
     </Box>
   )

@@ -13,10 +13,12 @@ const Section2 = () => {
     imgCardS2Src={robot1}
     titleS2="Lorem Ipsum"
     textS2="Ex ea commodo"/>
+
     <CardSection2
     imgCardS2Src={robot2}
     titleS2="Duis aute"
     textS2="Quis nostrud"/>
+    
     <CardSection2
     imgCardS2Src={robot3}
     titleS2="Excepteur sint"

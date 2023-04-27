@@ -8,7 +8,8 @@ import Footer from './homePageComponents/Footer';
 function App() {
   return (
 <div className='bodyHomePage'>  
- <DrawerAppBar/> 
+
+<DrawerAppBar/> 
 <Section1/> 
 <Section2/> 
 <Footer/> 
