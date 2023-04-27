@@ -20,9 +20,6 @@ import TrackChangesIcon from "@mui/icons-material/TrackChanges";
 import '../styles/navbar.css'
 
 
-
-
-// const drawerWidth = 320;
 const style = getComputedStyle(document.body);
 const maxWidth = style.getPropertyValue("--max-width");
 

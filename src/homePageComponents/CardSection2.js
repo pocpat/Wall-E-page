@@ -4,12 +4,13 @@ import '../styles/section2.css'
 
 export const CardSection2 = (props) => {
   return (
-    <div className='cardContainerS2' style={{ boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.4)' }}>
+    <div className='cardContainerS2' style={{ boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.4)',width:props.width }}>
     
     <img 
     src={props.imgCardS2Src} 
     alt='img' 
-    className='imgCardS2'/>
+    className='imgCardS2'
+    />
 
     
     {/*  ===== text container ====  */}

@@ -11,7 +11,8 @@
 .cardContainerS2{
     display: flex;
     flex-direction: column;
-    width: 85%;
+    // width: 85%;
+    max-width: 300px;
     height: auto;
     background-color: c.$cardColor;
     margin: 3% 4%;
