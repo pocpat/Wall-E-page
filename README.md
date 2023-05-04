@@ -6,9 +6,11 @@ This is a chatbot built using Dialogflow service that has been integrated into t
 
 The chatbot has the following features:
 
-* Answers questions about online auctions for website turners cars
-* Provides information about insurance policies for cars
-* Can assist customers with the buying process for insurance policies
+* Trained to answer questions asked in different ways: Catbot is trained to understand questions that are phrased in different ways. This means that users can ask questions using natural language and still receive a relevant answer.
+
+* Asks for more information to provide additional details: If Catbot needs more information to provide a complete answer, it will ask the user for more details. This helps ensure that the user receives the most accurate and helpful response possible.
+
+* Offers additional information upon request: If the user wants to know more about a topic, Catbot will offer additional information. If the user does not want more information, Catbot will politely end the conversation by saying "Great! Have a good day!"
 
 ## Built With 
 
