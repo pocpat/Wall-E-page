@@ -21,9 +21,6 @@ You can customize the chatbot to match the colors and branding of your website b
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 [Dialogflow Documentation](https://cloud.google.com/dialogflow/docs) - for providing information on how to build chatbots with Dialogflow
 [OpenAI](https://openai.com/) - for providing the technology behind ChatGPT, the language model used by this chatbot.
 
