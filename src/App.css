@@ -34,7 +34,7 @@ inputAreaS1  rgb (133, 71, 94);
 buttonS1 rgb (58, 112, 56); */
 
 df-messenger {
-    --df-messenger-bot-message:#5ccbbf;
+    --df-messenger-bot-message: rgb(109, 172, 106);
     --df-messenger-button-titlebar-color: rgb(8, 62, 43);
     --df-messenger-chat-background-color: rgb(228, 250, 233);
     --df-messenger-font-color: rgb(0, 17, 9);
