@@ -10,6 +10,16 @@ The chatbot has the following features:
 * Provides information about insurance policies for cars
 * Can assist customers with the buying process for insurance policies
 
+## Built With 
+
+[![React](https://img.shields.io/badge/-React-blue?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
+
+[![SASS](https://img.shields.io/badge/-SASS-pink?style=flat&logo=sass&logoColor=white)](https://sass-lang.com/)
+
+[![Dialogflow](https://img.shields.io/badge/-Dialogflow-green?style=flat&logo=dialogflow&logoColor=white)](https://cloud.google.com/dialogflow/)
+
+
+
 ## Getting Started
 
 To use the chatbot, simply click on the chat icon on the Mission_0 website. The chatbot will open in the same window and you can start asking your questions.
