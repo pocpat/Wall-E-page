@@ -6,9 +6,9 @@ This is a chatbot built using Dialogflow service that has been integrated into t
 
 The chatbot has the following features:
 
-Answers questions about online auctions for website turners cars
-Provides information about insurance policies for cars
-Can assist customers with the buying process for insurance policies
+* Answers questions about online auctions for website turners cars
+* Provides information about insurance policies for cars
+* Can assist customers with the buying process for insurance policies
 
 ## Getting Started
 
