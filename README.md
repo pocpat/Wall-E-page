@@ -1,7 +1,9 @@
-# Listing Website Home Page And Chatbot Integration
+# Listing Website Home Page And Chatbot Integration <br> (Mission 1)
 This project is a prototype for a listing website home page, built using the React.js front-end framework. A wireframe example has been provided to guide the design and layout. The design was created using Figma, ensuring a visually appealing user interface, and the images were AI rendered for high-quality graphics.
 
 As an additional feature, a prototype chatbot has been integrated into the application. The chatbot serves as a feasibility test and specifically answers questions related to the "Online Auctions" section of the FAQ page.
+
+This project was developed as part of Full-Stack Development studies, serving as a practical implementation to explore and apply various concepts and technologies.
 
 ## Design
 The final design of the website can be found on the color branch. Initially, a gray version of the website was developed on the gray branch, serving as a testing ground for implementing SASS and experimenting with different styling options.
