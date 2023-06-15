@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Mission_1 Online Auctions Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a chatbot built using Dialogflow service that has been integrated into the Mission_0 website. The chatbot is designed to answer questions about online auctions for website turners cars that sell cars and insurance. The goal of this project is to help create a new insurance buying experience for customers.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+The chatbot has the following features:
 
-### `npm start`
+* Trained to answer questions asked in different ways: Catbot is trained to understand questions that are phrased in different ways. This means that users can ask questions using natural language and still receive a relevant answer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Asks for more information to provide additional details: If Catbot needs more information to provide a complete answer, it will ask the user for more details. This helps ensure that the user receives the most accurate and helpful response possible.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Offers additional information upon request: If the user wants to know more about a topic, Catbot will offer additional information. If the user does not want more information, Catbot will politely end the conversation by saying "Great! Have a good day!"
 
-### `npm test`
+## Built With 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![React](https://img.shields.io/badge/-React-blue?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
 
-### `npm run build`
+[![SASS](https://img.shields.io/badge/-SASS-pink?style=flat&logo=sass&logoColor=white)](https://sass-lang.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![Dialogflow](https://img.shields.io/badge/-Dialogflow-green?style=flat&logo=dialogflow&logoColor=white)](https://cloud.google.com/dialogflow/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To use the chatbot, simply click on the chat icon on the Mission_0 website. The chatbot will open in the same window and you can start asking your questions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Customization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You can customize the chatbot to match the colors and branding of your website by modifying the CSS code. You can find the CSS code in the app.css file.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Dialogflow Documentation](https://cloud.google.com/dialogflow/docs) - for providing information on how to build chatbots with Dialogflow
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[OpenAI](https://openai.com/) - for providing the technology behind ChatGPT, the language model used by this chatbot.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
